@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.hero {
+  min-height: 550px;
+  position: relative;
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 550px;
+}
+
+.synopsis {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 1px 20px -8px #000;
+  border-radius: 12px;
+  padding: 20px 24px;
+  width: 100%;
+  max-width: 800px;
+  margin: -40px auto 0 auto;
+}
+
+.panel{
+  font-size: 32px;
+  font-weight: 600;
+  margin: 50px 0;
+}
+
+.character h4{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.character p{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.character-1 ,.character-3{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.character-2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero__card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.hero__col{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__col button{
+  background-color: red;
+  padding: 4px;
+}
+
+.hero__col button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero__col button:hover{
+  background-color: #000;
+}
+
+.footer{
+  background-color: #000;
+}
+.footer p{
+  padding: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .character-1, .character-2, .character-3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .hero__card{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+
+/* Utility */
+.width--100 {
+  width: 100%;
+}
+
+.text--white {
+  color: white;
+}
+
+.text--blue {
+  color: blue;
+}
+
+.text--orange{
+  color: #FA4A0C;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--center {
+  text-align: center;
+}
+
+
+
+
