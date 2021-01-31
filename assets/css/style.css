@@ -14,9 +14,36 @@
   padding-right: 16px;
 }
 
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: #FA4A0C;
+  font-size: 20px;
+}
+
+
 .hero {
   min-height: 550px;
   position: relative;
+  margin-top: -110px;
 }
 
 .hero__background {
@@ -136,6 +163,10 @@
     max-width: 540px;
   }
 
+  nav ul li a{
+    display: none;
+  }
+
   .character-1, .character-2, .character-3{
     display: flex;
     flex-direction: column;
@@ -143,12 +174,25 @@
     padding: 50px;
   }
 
+  .character img{
+    width: 100%;
+  }
+
   .hero__card{
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center; */
     flex-wrap: wrap;
     justify-content: center;
+    margin: 16px;
+  }
+
+  .hero__col{
+    margin: 16px;
+  }
+
+  .panel h1{
+    font-size: 20=px;
+    font-weight: 600;
+    color: #000;
   }
 
 }
@@ -156,6 +200,10 @@
 @media (max-width: 575px) {
   .container {
     max-width: 540px;
+  }
+
+  .hero__col{
+    margin: 16px;
   }
 }
 
