@@ -9,6 +9,7 @@
     width: 100%;  
     max-width: 1140px;
     margin: 0 auto;
+    margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -193,6 +194,16 @@ button:hover{
 @media(max-width: 575px){
   .container{
     max-width: 540px;
+  }
+
+  .logo h1{
+    font-size: 20px;
+  }
+
+  .toogle-btn{
+    width: 32px;
+    top: 20px;
+    right: 40px;
   }
 
   .hero__button{
